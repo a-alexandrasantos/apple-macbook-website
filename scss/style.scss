@@ -125,6 +125,19 @@ header{
       }
     }
   }
+
+  .desktop{
+    @include responsive(s){
+      display: none;
+    }
+  }
+
+  .mobile{
+
+    @media screen and (min-width: $container-m){
+      display: none;
+    }
+  }
 }
 
 .top-bar{
@@ -132,6 +145,8 @@ header{
   border-bottom: 1px solid lighten($preto, 70%);
 
   .topModels{
+    display: flex;
+    justify-content: space-between;
 
     a{
       font-weight: 600;
@@ -175,7 +190,58 @@ header{
     .link-item{
       color: $preto;
       opacity: .56;
+
+      @include responsive(s){
+        display: none;
+      }
+    }
+  }
+}
+
+.heroVideo{
+  background-image: url('../img/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh; 
+}
+
+.macbookInfo{
+  text-align: center;
+  color: $cinza;
+
+
+  h1{
+    font-size: 85px;
+    margin-bottom: 16px;
+
+    @include responsive(s){
+      font-size: 35px;
     }
   }
 
+  p{
+    font-weight: 600;
+    font-size: 30px;
+    max-width: 850px;
+    margin: 24px auto;
+
+    @include responsive(s){
+      font-size: 20px;
+    }
+  }
+
+  .macbookInfoLinks{
+    padding: 24px 0;
+
+    a{
+      font-size: 20px;
+      margin-right: 30px;
+      color: $link;
+      font-weight: 600;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
 }

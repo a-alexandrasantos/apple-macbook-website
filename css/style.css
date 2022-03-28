@@ -5,7 +5,7 @@
 .blue {
   background-color: #0071e3;
   opacity: 1;
-  color: #fff;
+  color: #fff !important;
   border-radius: 980px;
   transition: all 0.5s ease;
 }
@@ -228,9 +228,23 @@ header li a img {
 header li a:hover {
   color: #fff;
 }
+@media screen and (max-width: 960px) {
+  header .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  header .mobile {
+    display: none;
+  }
+}
 
 .top-bar {
   border-bottom: 1px solid #bfbfbf;
+}
+.top-bar .topModels {
+  display: flex;
+  justify-content: space-between;
 }
 .top-bar .topModels a {
   font-weight: 600;
@@ -266,6 +280,55 @@ header li a:hover {
 .top-bar .topLink .link-item {
   color: #0c0c0c;
   opacity: 0.56;
+}
+@media screen and (max-width: 960px) {
+  .top-bar .topLink .link-item {
+    display: none;
+  }
+}
+
+.heroVideo {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.macbookInfo {
+  text-align: center;
+  color: #1d1d1f;
+}
+.macbookInfo h1 {
+  font-size: 85px;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 960px) {
+  .macbookInfo h1 {
+    font-size: 35px;
+  }
+}
+.macbookInfo p {
+  font-weight: 600;
+  font-size: 30px;
+  max-width: 850px;
+  margin: 24px auto;
+}
+@media screen and (max-width: 960px) {
+  .macbookInfo p {
+    font-size: 20px;
+  }
+}
+.macbookInfo .macbookInfoLinks {
+  padding: 24px 0;
+}
+.macbookInfo .macbookInfoLinks a {
+  font-size: 20px;
+  margin-right: 30px;
+  color: #06c;
+  font-weight: 600;
+}
+.macbookInfo .macbookInfoLinks a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

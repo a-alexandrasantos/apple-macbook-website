@@ -9,11 +9,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
     <body>
-
+        <!-- header start -->
         <header>
             <div class="container">
                 <div class="grid-12 m-0">
-                    <nav>
+                    <nav class="desktop">
                         <ul>
                             <li><a href="#"><img src="img/apple.svg" alt="Logo Apple" title="Logo Apple" width="15" height="15"></a></li>
                             <li><a href="#">Store</a></li>
@@ -30,51 +30,71 @@
                             <li><a href="#"><img src="img/bag.svg" alt="Logo Apple" title="Logo Apple" width="15" height="15"></a></li>
                         </ul>
                     </nav>
+
+                    <nav class="mobile">
+                        <ul>
+                            <li><a href="#" class="hamburguer"></a></li>
+                            <li><a href="#"><img src="img/apple.svg" alt="Logo Apple" title="Logo Apple" width="15" height="15"></a></li>
+                            <li><a href="#"><img src="img/bag.svg" alt="Logo Apple" title="Logo Apple" width="15" height="15"></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
+        <!-- header end -->
 
+        <!-- top-bar start -->
         <div class="top-bar">
             <div class="container">
-                <div class="grid-3">
+                <div class="grid-12">
                     <div class="topModels">
                         <a href="#">
                             <span>14” and 16” models</span><br/>
                             MacBook Pro
                         </a>
+
+                        <div class="topLink">
+                            <ul>
+                                <li>
+                                    <a href="#" class="link-item">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-item">Why Mac</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-item">Tech Specs</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn blue">Buy</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="grid-9 topLink">
 
-                    <ul>
-                        <li>
-                            <a href="#" class="link-item">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-item">Why Mac</a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-item">Tech Specs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn blue">Buy</a>
-                        </li>
-                    </ul>
                 </div>
- 
-
             </div>
         </div>
-
+        <!-- top-bar end -->
 
         <section class="heroVideo">
-            <div class="container">
-                <h1>Macbook Pro</h1>
-            </div>
         </section>
 
         <section class="macbookInfo">
-            <h2>Supercharged</h2>
+            <div class="container">
+                <div class="grid-12">
+                    <h1>Supercharged for pros.</h1>
+                    <p>The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon 
+                    designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina 
+                    XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its 
+                    kind, this MacBook Pro is a beast.</p>
+                    
+                    <div class="macbookInfoLinks">
+                        <a href="#">Watch the event</a>
+                        <a href="#">Watch the film</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="macbookStats">
