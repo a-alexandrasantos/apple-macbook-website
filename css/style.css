@@ -1,3 +1,19 @@
+.btn {
+  padding: 5px 10px;
+}
+
+.blue {
+  background-color: #0071e3;
+  opacity: 1;
+  color: #fff;
+  border-radius: 980px;
+  transition: all 0.5s ease;
+}
+.blue:hover {
+  color: #fff !important;
+  background-color: #007efd;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +23,8 @@
 body {
   width: 100%;
   background-color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
 }
 
 .container {
@@ -23,7 +40,6 @@ body {
 .grid-1 {
   width: calc(8.3333333333% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -37,7 +53,6 @@ body {
 .grid-2 {
   width: calc(16.6666666667% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -51,7 +66,6 @@ body {
 .grid-3 {
   width: calc(25% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -65,7 +79,6 @@ body {
 .grid-4 {
   width: calc(33.3333333333% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -79,7 +92,6 @@ body {
 .grid-5 {
   width: calc(41.6666666667% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -93,7 +105,6 @@ body {
 .grid-6 {
   width: calc(50% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -107,7 +118,6 @@ body {
 .grid-7 {
   width: calc(58.3333333333% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -121,7 +131,6 @@ body {
 .grid-8 {
   width: calc(66.6666666667% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -135,7 +144,6 @@ body {
 .grid-9 {
   width: calc(75% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -149,7 +157,6 @@ body {
 .grid-10 {
   width: calc(83.3333333333% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -163,7 +170,6 @@ body {
 .grid-11 {
   width: calc(91.6666666667% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -177,7 +183,6 @@ body {
 .grid-12 {
   width: calc(100% - 24px);
   margin: 12px;
-  height: 72px;
   float: left;
 }
 @media screen and (max-width: 960px) {
@@ -186,6 +191,11 @@ body {
     margin: 12px;
     float: none;
   }
+}
+
+.m-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -217,6 +227,45 @@ header li a img {
 }
 header li a:hover {
   color: #fff;
+}
+
+.top-bar {
+  border-bottom: 1px solid #bfbfbf;
+}
+.top-bar .topModels a {
+  font-weight: 600;
+  font-size: 22px;
+  color: #0c0c0c;
+  line-height: 20px;
+}
+.top-bar .topModels a span {
+  color: #0c0c0c;
+  opacity: 0.56;
+  font-size: 13px;
+  font-weight: 400;
+}
+.top-bar .topLink {
+  text-align: right;
+}
+.top-bar .topLink ul {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  height: 45px;
+}
+.top-bar .topLink ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.top-bar .topLink a {
+  font-size: 13px;
+}
+.top-bar .topLink a:hover {
+  color: #0071e3;
+}
+.top-bar .topLink .link-item {
+  color: #0c0c0c;
+  opacity: 0.56;
 }
 
 /*# sourceMappingURL=style.css.map */

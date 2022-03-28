@@ -1,0 +1,16 @@
+.btn{
+    padding: 5px 10px;
+}
+
+.blue{
+    background-color: $azul;
+    opacity: 1;
+    color: $branco;
+    border-radius: 980px;
+    transition: all .5s ease;
+
+    &:hover{
+        color: $branco!important;
+        background-color: lighten($azul, 5%);
+    }
+}
