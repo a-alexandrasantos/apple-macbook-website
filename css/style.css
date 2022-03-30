@@ -247,6 +247,68 @@ header {
     align-items: center;
     justify-content: space-between;
   }
+
+  .nav-list-mobile {
+    width: 100%;
+    height: 0;
+    opacity: 0.5;
+    background-color: #0c0c0c;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 36px 24px;
+    transition: 0.8s ease;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 9;
+  }
+  .nav-list-mobile li {
+    width: 100%;
+    margin: 0 8px;
+  }
+  .nav-list-mobile li:first-child {
+    border-bottom: 1px solid #333;
+  }
+  .nav-list-mobile li a {
+    color: #f5f5f7;
+    display: block;
+    padding: 8px;
+    font-size: 17px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin: 8px 16px;
+    border-bottom: 1px solid #333;
+  }
+  .nav-list-mobile li a:hover {
+    opacity: 0.7;
+  }
+  .nav-list-mobile li .last {
+    border-bottom: 1px solid rgba(51, 51, 51, 0) !important;
+  }
+  .nav-list-mobile .search {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 10px;
+    background-color: #1f1f1f;
+    margin-bottom: 8px;
+    outline: none;
+    color: #f5f5f7;
+  }
+
+  .nav-list-mobile.active {
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .nav-list-mobile {
+    display: none;
+  }
 }
 .hamburguer {
   width: 25px;
@@ -302,66 +364,12 @@ div.hamburguer.hamburguer-active:before {
   background-color: #f5f5f7;
 }
 
-.nav-list-mobile {
-  width: 100%;
-  height: 0;
-  opacity: 0.5;
-  background-color: #0c0c0c;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 36px 24px;
-  transition: 1s ease;
-  position: fixed;
-  top: -100%;
-  z-index: 0;
-}
-.nav-list-mobile li {
-  width: 100%;
-  margin: 0 8px;
-}
-.nav-list-mobile li:first-child {
-  border-bottom: 1px solid #333;
-}
-.nav-list-mobile li a {
-  color: #f5f5f7;
-  display: block;
-  padding: 8px;
-  font-size: 17px;
-  opacity: 1;
-  transition: all 0.5s ease;
-  margin: 8px 16px;
-  border-bottom: 1px solid #333;
-}
-.nav-list-mobile li a:hover {
-  opacity: 0.7;
-}
-.nav-list-mobile li .last {
-  border-bottom: 1px solid rgba(51, 51, 51, 0) !important;
-}
-.nav-list-mobile .search {
-  width: 100%;
-  height: 35px;
-  border-radius: 5px;
-  border: 0;
-  padding: 0 10px;
-  background-color: #1f1f1f;
-  margin-bottom: 8px;
-  outline: none;
-  color: #f5f5f7;
-}
-
-.nav-list-mobile.active {
-  top: 0;
-  height: 100vh;
-  opacity: 1;
-}
-
 .top-bar {
   backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255, 255, 255, 0.72);
   border-bottom: 1px solid #bfbfbf;
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 .top-bar .topModels {
@@ -413,7 +421,13 @@ div.hamburguer.hamburguer-active:before {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
+}
+@media screen and (max-width: 960px) {
+  .heroVideo {
+    background-size: contain;
+  }
 }
 
 .macbookInfo {
